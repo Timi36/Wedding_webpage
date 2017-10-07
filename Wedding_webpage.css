@@ -1,0 +1,256 @@
+/* ==== GENERAL STYLES ==== */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: block;
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  font-family: 'Muli';
+  font-size: 1.1rem;
+  line-height: 1.5;
+  }
+
+/* ====LAYOUT STYLES==== */
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr {
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #444349;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.program h2, .faq h2 {
+  color:#d2ba87;
+  text-align: center;
+}
+h3 {
+  font-family: 'Libre Baskerville', oblique;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.wrapper p {
+  font-family: 'Libre Baskerville';
+  letter-spacing: 0.1rem;
+  
+}
+.cover {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  color: hsla(0,0%,100%,.9);
+  text-align: center;
+  display: table;
+
+}
+.hero-text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  margin-bottom: 0;
+  
+}
+.wrapper {
+  background-color: hsla(100,0%,0%,.6);
+  width: 100vw;;
+  margin: 22rem 0;
+  padding: 1.25rem;
+}
+.headline {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.15rem;
+  color: #d2ba87;
+  margin-bottom: 0;
+ }
+
+.tagline {
+  font-family: 'Libre Baskerville';
+  line-height: 2rem;
+  padding: 0.5rem;
+  margin-bottom: 0;
+}
+.date {
+  font-size: 1.25rem;
+  letter-spacing: 0.15rem;
+  vertical-align: middle;
+}
+p.date {
+  margin-bottom: 0;
+}
+.wrapper .tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.date::before,.date::after {
+  display: inline-block; 
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0.5rem;
+}
+
+
+.locations p {
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+
+.program {
+  text-align: center;
+  width: 100vw;
+}
+.program h2 {
+  margin-top: 1rem; /* To account for the unequal margins compared to the previous section. */
+}
+.wrapper .tagline {
+  
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+  margin-left: auto;
+  margin-right: auto;
+}
+.program-wrapper .tagline {
+  font-style: italic;
+  
+}
+
+li, p .Gifts {
+  line-height: 1.5rem; 
+  font-size: 1.2rem;
+}
+.locations, .Gifts, .contact {
+  padding: 0.5rem 1rem;
+  color: #444349;
+  width: 95%;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.program, .faq  {
+  background-color: hsla(100,0%,0%,.6);
+  padding: 0.5rem 1rem;
+  color: #d2ba87;
+  margin: 1.5rem auto;
+  
+}
+.Gifts img {
+  height: 7.5rem;
+  width: auto;
+}
+.Gifts p:last-child {
+  margin-bottom: 0;
+}
+.questions {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.answers {
+  margin-bottom: 1.5rem;
+}
+.faq h2 {
+  margin-top: 1rem;
+}
+
+.contact h2 {
+  margin-top: 0;
+}
+
+.footer-wrapper {
+  display: table-cell;
+  background-color: #606060;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: small;
+  font-family: 'Muli';
+  color: #fff;
+  width: 100vw;
+  height: 10vh;
+}
+.footer {
+  padding: 1rem auto;
+  margin: auto;
+}
+p .footer {
+  line-height: 1.5;
+}
+.blurb {
+  display: inline-block;
+  padding: 1rem;
+  text-align: center;
+   
+}
+img {
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color 0.15s ease-in-out;
+}
+/*==== Media queries ====*/
+
+@media (min-width: 768px) {
+  .wrapper .tagline {
+    text-transform: uppercase;
+  }
+  .wrapper {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .question-group {
+    width: 30vw;
+    display: inline-block;
+    padding: 2rem;
+    vertical-align: top;
+  }
+  .headline {
+    font-size: 7rem;
+  }
+  
+}
+@media (max-width: 425px){
+  .blurb::after {
+    display: block;
+    content:"";
+    background-color: #444349;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+  }
+  .question-group::after {
+    display: block;
+    content:"";
+    background-color: #d2ba87;
+    height: 0.1875rem;
+    width: 50vw;
+    margin: 1.5rem auto;
+  }
+}
